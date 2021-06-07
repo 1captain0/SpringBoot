@@ -13,9 +13,9 @@ public class AppController{
 	}
 	
 	@PostMapping("/redirect")
-	public String redirect(User user) {
-		System.out.println(user.getUser());
-		System.out.println(user.getPass());
+	public String redirectLogic(User user) {
+		//System.out.println(user.getUser());
+		//System.out.println(user.getPass());
 		
 		if(user.getUser().equals("admin") && user.getPass().equals("admin")) {
 			return "redirect1";
