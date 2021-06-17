@@ -1,0 +1,12 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+	<meta charset="UTF-8">
+	<title>Success</title>
+</head>
+	<body>
+		<p th:text="${user.getName()}"></p>
+		<p>Your details are saved successfully !</p>
+		<a th:href="@{/login}">Login</a>
+	</body>
+</html>
